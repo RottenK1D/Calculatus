@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Baloo+Da+2:wght@500&family=Fira+Code:wght@500&family=Fredoka+One&family=Indie+Flower&family=Press+Start+2P&family=Rubik+Mono+One&family=Secular+One&family=Titan+One&display=swap');
+
+:root {
+    --bg1: #272932;
+    --bg2: #6f9283;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg1);
+}
+
+.calc-case {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(4, 80px);
+}
+
+.calc-case > button{
+    outline: none;
+    border: 3px solid var(--bg2);
+    font-size: 2.5rem;
+    background-color: var(--bg2);
+    color: var(--bg1);
+    
+}   
+
+.calc-case > button:hover {
+    background-color: #7ca091;  
+    color: #FEFCFF;  
+}  
+
+.output {
+    border-radius: 10px 10px 0 0;
+    grid-column: 1 / -1;
+    background-color: #aacebf;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-right: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.current-output {
+    color: var(--bg1);
+    font-size: 2.5rem;
+}
+
+.previous-output {
+    color: var(--bg1);
+    font-size: 1.5rem;
+}
