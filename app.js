@@ -1,10 +1,9 @@
-const numberButtons = document.querySelectorAll('[number]')
-const operationButtons = document.querySelectorAll('[operation]')
-const equalsButton = document.querySelector('[equals]')
-const deleteButton = document.querySelector('[delete]')
-const currentOutput= document.querySelector('[current-output]')
-const previousOutput= document.querySelector('[previous-output]')
-const keyboardInput = document.querySelector('[keyboard-input]')
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const equalsButton = document.querySelector('[data-equals]')
+const deleteButton = document.querySelector('[data-delete]')
+const currentOutput= document.querySelector('[data-current-output]')
+const previousOutput= document.querySelector('[data-previous-output]')
 
 class Calculator {
     constructor(previousOutput, currentOutput) {
